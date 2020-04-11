@@ -1,0 +1,271 @@
+body{
+    background-color: #fff5cb;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  /*NAVIGATION BAR*/
+  nav{
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    z-index: 1;
+  }
+  
+  nav ul li{
+    float: right;
+    margin-right: 40px;
+    list-style-type: none;
+  }
+  
+  .nav-link {
+    color:purple;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    font-style: italic;
+  }
+  
+  #brand{
+    float: left;
+    font-weight: bold;
+  }
+  
+  #brand .nav-link{
+    color: purple;
+    font-size: 14pt;
+  }
+  
+  #brand .nav-link:hover {
+    color: black;
+  }
+  
+  
+  /*HEADER*/
+  #home{
+    padding-top: 3em;
+    height: 100vh;
+    min-height: 300px;
+    background: url('https://images.unsplash.com/photo-1544731612-de7f96afe55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') center 105% no-repeat fixed;
+    background-size: cover;
+  }
+  .header-tag{
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px purple;
+  }
+  
+  h1{
+    font-size: 60pt;
+    animation: Text 3s 1;
+  }
+  
+  h3.header-tag {
+    margin-top: -20px;
+    font-size: 18pt;
+
+  }
+ 
+
+ /*ABOUT ME*/
+  .main{
+    text-align: center;
+    height: 50%;
+    padding:2em;
+    margin-top: 3em;
+  }
+
+  #about{
+    margin-top: 50px;
+    display: inline-block;
+  }
+   
+  h2{
+    font-family: 'Acme', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 15px purple;
+    text-decoration: underline;
+    font-size: 40px;
+  }
+
+  
+  #about-picture{
+    width: 30vw;
+    float: left;
+  }
+  
+  #profile-pic{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius:o.4em;
+    box-shadow: 2px 2px 2px black;
+  }
+  
+  #about-content{
+    width: 50vw;
+    float: right;
+    
+  }
+  p{
+      font-size: 20px;
+  }
+
+
+/* SKILLS/ACHIEVEMENTS */
+
+.middle{
+    text-align: center;
+    height: 80%;
+    padding:6em;
+    margin-top: 3em;
+    
+}
+#_skills{
+    margin-top: 50px;
+    display: inline-block;
+    
+}
+#skills{
+    width: 40vw;
+    float: left;
+    font-size: 25px;
+  
+}
+
+#acheive{
+    width: 40vw;
+    
+    float: right;
+    font-size: 25px;
+
+}
+  
+ul li{
+    list-style-type: none;
+}
+
+
+/* PROJECTS */
+.third:after{
+    content:"";
+    clear:both;
+    display: table;
+    
+}
+.third{
+    padding:4em;
+    margin-top: 3em;
+    text-align: left;
+    margin-bottom: 4em;
+}
+.projects{
+    display: block;
+}
+.item{
+    float:left;
+    width:50%;
+    text-align: center;
+    text-decoration: none;
+    border:2px solid purple;
+    border-radius: 5%;
+}
+span{
+    font-family: 'Acme', sans-serif;
+    color:purple;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span:hover{
+    text-decoration: none;
+    font-style: oblique;
+}
+.item:hover{
+    text-decoration: none;
+}
+
+/*EXPERIENCE */
+.experience{
+    padding:4em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    display: inline-block;
+    
+}
+.experience ul{
+    width: 80vw;
+    font-size: 25px;
+    
+}
+
+
+/* CONTACT ME */
+.contact{
+    padding:2em;
+    margin-top: 3em;
+    text-align: left;
+    margin-bottom: 5em;
+   
+    
+}
+.contact h2{
+    font-family: 'Acme', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 15px purple;
+    margin-bottom: 1em;
+}
+.form {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;  
+}
+#formstyle{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px; 
+   text-align: center;
+}
+#formstyle3{
+    width: 80%;
+    height: 150px;
+    text-align: center;
+}
+#sendInput{
+    display: block;
+    margin:auto;
+    margin-top: 1em;
+    font-size: 25px;
+    width:20%;
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    text-align: center;
+}
+footer ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+
+/*ANIMATION FOR HEADER*/
+@keyframes Text{
+    0%{
+        color: white;
+        margin-bottom: 40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+}
