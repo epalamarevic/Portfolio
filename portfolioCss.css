@@ -1,19 +1,32 @@
 body{
-    margin: 3em;
+    margin: 1em;
     padding: 0;
-    border: solid 5px gray;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    color:white;
+    background: linear-gradient(140deg, #293031 60%, #15112e 60%)
   }
-  
+  h2{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: gold;
+  }
+  ul {
+    list-style: none;
+  }
+  p{
+    font-size: 20px;
+  }
 
   /*NAVIGATION BAR*/
   nav{
-    background-color: rgba(221, 218, 218, 0.925);
+    background-color: rgba(12, 11, 11, 0.925);
     position: fixed;
     top: 0;
     left: 0;
     height: 50px;
     width: 100vw;
-    z-index: 2;
+    z-index: 1;
   }
   
   nav ul li{
@@ -23,12 +36,12 @@ body{
   }
   
   .nav-link {
-    color:purple;
+    color:gold;
     text-decoration: none;
   }
   
   .nav-link:hover {
-    color: black;
+    color: whitesmoke;
     font-style: italic;
   }
   
@@ -37,95 +50,69 @@ body{
     font-weight: bold;
   }
   
-  #brand .nav-link{
-    color: purple;
-    font-size: 14pt;
+  
+
+
+  /*INTRODUCTION*/
+  .intro{
+    font-size: 20px;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    text-align: right;
+    color:black;
+    padding: 2em;
+    margin: auto;
+    margin-top: 2.5em;
+    background: linear-gradient(140deg, #dbfa50 60%, #ffde4b 60%);
   }
   
-  #brand .nav-link:hover {
-    color: black;
-  }
-  
-  
-  /*HEADER*/
-  .top  {
-    padding-top: 2em;
-    margin-left: 8%;
-  }
-  
-  #profile-pic{
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-radius:50em;
-    box-shadow: 2px 2px 2px black;
-    margin-left: 8em;
-    margin-top: -8em;
+  /*INTRO-BUTTONS*/
+  ul.intro-buttons > li {
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 0;
+}
+  .btn{
+    color: rgb(24, 22, 22);
+    border: 2px outset rgba(240, 233, 233, 0.9);
+    background: #f8e3e3;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     
   }
-  #topHeader{
-    display: inline-block;
+  .btn:hover {
+    color: #fff;
+    border: 2px outset rgba(160, 156, 156, 0.9);
+    background: rgba(121, 116, 116, 0.9);
+    text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
   }
-  #info{
-    display: inline-block;
-    margin:1em;
-    margin-top: 3em;
-    color:purple;
-  }
- #info li{
-   margin:1em;
-   padding:.05em;
-  font-weight: bold;
-  
+
+  /*ABOUT SECTION*/
+ .about{
+margin-top: 5em;
  }
- #info li a{
-   color: black;
- }
-  
- /*ABOUT ME*/
-  .main{
-    text-align: center;
-    height: 50%;
-    padding:2em;
-    margin-top: 1em;
+  .col{
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+   margin-bottom: 10em;
   }
-
-  h2{
-    font-family: 'Acme', sans-serif;
-    color: black;
-    text-shadow: 5px 5px 15px purple;
-    text-decoration: underline;
-    font-size: 25px;
+  .col img{
+    margin-left: -5em;
   }
-
-  #about-content{
-    width: 50vw;
-    float: left;
-  }
-  p{
-      font-size: 18px;
-  }
-
-
-/* SKILLS/ACHIEVEMENTS */
-
-.middle{
-    height: 80%;
-    padding:6em;
-    margin-top: 0em;
+/*PROFILE IMAGE*/
+#profile-pic{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius:50em;
+  box-shadow: 5px 5px 5px rgb(228, 243, 91);
+  border: 3px rgb(14, 13, 13) solid;
 }
 
-#skills{
-    width: 40vw;
-    float: left;
-    font-size: 17px;
-  
-}
-.container {
-  width: 100%;
-  background-color: #ddd;
-}
 
+/*SKILLS*/
+.skill-education{
+  margin-top: 10em;
+}
 .skill {
   text-align: right;
   padding: 2px;
@@ -135,106 +122,56 @@ body{
 .html {width: 80%; background-color: #4CAF50;}
 .css {width: 70%; background-color: #2196F3;} 
 .c {width: 50%; background-color: #f44336;}
-.api {width: 40%; background-color: #808080;}
+.api {width: 60%; background-color: #b09bd8;}
 
-
+/*EDUCATION/EXPERIANCE*/
 #acheive{
-    width: 40vw;
-    float: right;
-    font-size: 17px;
-}
-  
-ul li{
-    list-style-type: none;
+font-size: 20px;
 }
 
-
-/* PROJECTS */
-.project{
-  width:auto;
-  height:auto;
-  margin-top:20em;
-  margin-left: 2em;
-  position: relative;
-  
+/*PROJECTS*/
+.projects{
+  margin-top: 10em;
 }
-.project h2{
-  margin-left: 1em;
-}
-.overlay{
-  display: inline-block;
-  margin:15px;
-}
-.overlay img{
-  transition: .3s;
-  opacity: 1;
-  border-radius: 50%;
-}
-.overlay:hover img{
-  filter: blur(2px);
-}
-
-.overlay h4{
-  position:absolute;
-  top:50%;
+.col-md-3{
+  margin-left: 3em;
   text-align: center;
-  opacity: 0;
-  transition: .3s;
-  color: black;
-    text-shadow: 5px 5px 15px white;
-  z-index: 1;
 }
-.overlay:hover :not(img){
-  opacity: 1;
+.row .col-md-3{
+  margin-left: 5em;
+}
+.portfolio-caption{
+  background: black;
 }
 
 
+/*CONTACT FORM*/
+.contact-form{
+  margin-top: 10em;
+  background: linear-gradient(100deg, rgb(245, 55, 55),rgb(252, 196, 205));
+}
+form label{
+  width:5em;
+}
+form input, form textarea{
+  width: 50em;
+}
+button{
+  margin-left: 5em;
+}
 
-
-/* CONTACT ME */
-.info{
-    padding:2em;
-    margin-top: 3em;
-    text-align: left;
-    margin-bottom: 5em;  
-}
-.contact h2{
-    font-family: 'Acme', sans-serif;
-    color:black;
-    margin-bottom: 1em;
-    text-align: center;
-}
-.form {
-    width: 100%;
-    font-size: 20px;
-    text-align: center;  
-}
-#formstyle{
-    width: 35%;
-    padding:.05%;
-    margin-bottom: 10px; 
-   text-align: center;
-}
-#subject{
-    width: 40%;
-    padding:1.5%;
-    text-align: center;
-}
-#sendInput{
-    display: block;
-    margin:auto;
-    margin-top: 1em;
-    font-size: 15px;
-    width:20%;
-}
 
 /* FOOTER */
 footer{
     position: relative;
     text-align: center;
+    color: whitesmoke;
 }
 footer ul li{
     display: inline;
     list-style-type: none;
     margin-right: 1em;
+}
+footer a{
+  color:whitesmoke;
 }
